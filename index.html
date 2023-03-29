@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan's Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <section class="menu">
+        <button id="close-menu">&times</button>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header class="header">
+        <nav class="default-nav">
+            <a href="#about-me">About Me</a>
+            <a href="#qualifications">Qualifications</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#contact-me">Contact Me</a>
+        </nav>
+        <nav class="mobile-nav">
+            <button id="menu-button">menu</button>
+        </nav>
+    </header>
+    <main class="container">
+       
+        <article class="intro">
+            <img id="profile-image" width="300" height="300" src="WhatsApp Image 2022-11-05 at 2.53.04 PM.jpeg" alt="profile">
+            <h1>Hi, I'm Darshan</h1>
+            <p>I am <span id="dyanamic-text" class="dyanamic-text-color"></span></p>
+            <p class="social-links">
+                <a href="https://www.instagram.com/darshanvyas36/"  target="_blank">
+                    <img src="data:image/jpeg;base64,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" alt="instagram logo" width="62">
+                </a>
+                <a href="www.twitter.com" target="_blank">
+                    <img src="https://www.bannereasy.com/images/social-twitter.png" alt="twitter logo">
+                </a>
+                <a href="www.facebook.com" target="_blank">
+                    <img src="https://www.bannereasy.com/images/social-facebook.png" alt="facebook logo">
+                </a>
+            </p>
+        </article>
+        
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>A Computer Science student currently in 2nd year</p>
+            <p>
+                Finished my schooling in the year 2020. <br>
+                Scored :
+                80.8% in 10th from mp board
+                93.6% in 12th from rajasthan board
+                84 percentile in mah-cet exam
+                65 percentile in jee mains
+            </p>
+            <p>
+                This website is ab attemp to showcase my knowledge in technology and get some internship opportunmities.
+            </p>
+        </section>
+
+        <section id="qualifications">
+            <h2>Qualifications</h2>
+            <ol>
+                <li>cs 50 computer science program</li>
+                <li>dev nest front-end bootcamp</li>
+            </ol>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Cricket</li>
+                <li>Listning to Music</li>
+                <li>Coding</li>
+            </ul>
+        </section>
+        
+        <section id="technologies">
+            <h2>Technologies</h2>
+       
+            <section class="container">
+                <section class="cards">
+                    <header>
+                        <h1>Frontend</h1>
+                    </header>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </section>
+                <section class="cards">
+                    <header>
+                        <h1>Backend</h1>
+                    </header>
+                    <ul>
+                        <li>NodeJS</li>
+                        <li>Rails</li>
+                        <li>Asp.NEt</li>
+                    </ul>
+                </section>
+                <section class="cards">
+                    <header>
+                        <h1>Database</h1>
+                    </header>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>Mango DB</li>
+                        <li>Postgres</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+
+        <section id="contact-me">
+            <!-- <form name="contact" id="contact" method="post"  data-netlify="true"> -->
+            <form action="document.php" id="contact" method="post">
+                <h1>Contact Me</h1>
+                <section>
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" required/>
+                </section>
+                <section>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" required/>
+                </section>
+                <section>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </section>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main> 
+    <footer>
+        <!-- press and hold '''window + . ''' for emogies -->
+        Made with by DARSHAN ©2023
+    </footer>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html> 
